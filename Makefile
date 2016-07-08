@@ -18,7 +18,7 @@ build:
 	@echo "Files build/ng-admin.min.css and build/ng-admin.min.js updated (with minification)"
 
 build-dev: install
-	@NODE_ENV=development ./node_modules/webpack/bin/webpack.js --progress --devtool source-map
+	@NODE_ENV=development ./node_modules/webpack/bin/webpack.js --progress --devtool inline-source-map
 	@cp -Rf build examples/blog/
 	@echo "Files build/ng-admin.css and build/ng-admin.js updated (WITHOUT minification)"
 
